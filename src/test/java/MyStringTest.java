@@ -23,4 +23,13 @@ public class MyStringTest {
         Assert.assertEquals(-1, i);
     }
 
+    @Test
+    public void tests1Empty(){
+        String s1 = "";
+        String s2 = "string";
+        int pos = 1;
+        int i = ms.indexOfString(s1,s2,pos);
+        Assert.assertEquals(-1, i);
+    }
+
 }
