@@ -43,7 +43,7 @@ public class MyStringTest {
 
     @Test
     public void tests2NotIns1(){
-        String s1 = "string";
+        String s1 = "strcaing";
         String s2 = "cat";
         int pos = 1;
         int i = ms.indexOfString(s1,s2,pos);
