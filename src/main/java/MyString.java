@@ -1,33 +1,32 @@
 public class MyString {
-    public int indexOfString(String s1, String s2, int pos){
-        if (s1 == null ||s1.equals("") || s2 == null || s2.equals("")){
-            return -1;
-        }
-        //create two pointers: i in s1 and j in s2, and move j pointer along s2 if the string so far matches s1
-        int j = 0;
-        int startIndex = -1;
-        for (int i = 0; i < s1.length(); i++){
-            if (s1.charAt(i) == s2.charAt(j)){
-                //if startIndex is -1, it is the beginning of the potential matching substring in s1
-                if(startIndex == -1 && i>= pos && j == 0){
-                    startIndex = i;
+    public int indexOfString(String s1, String s2, int pos) {
+        if (s1 != null && !s1.equals("") && s2 != null && !s2.equals("")) {
+            //create two pointers: i in s1 and j in s2, and move j pointer along s2 if the string so far matches s1
+            int j = 0;
+            int startIndex = -1;
+            for (int i = 0; i < s1.length(); i++) {
+                if (s1.charAt(i) == s2.charAt(j)) {
+                    //if startIndex is -1, it is the beginning of the potential matching substring in s1
+                    if (startIndex == -1 && i >= pos && j == 0) {
+                        startIndex = i;
+                    }
+                    if (j == s2.length() - 1) {
+                        return startIndex;
+                    }
+                    //do not increase the pointer for s2 beyond the length of s2
+                    if (j < s2.length() - 1) {
+                        j++;
+                    }
+                } else if (startIndex != -1) {
+                    startIndex = -1;
+                    j = 0;
                 }
-                if(j==s2.length() -1){
-                    return startIndex;
-                }
-                //do not increase the pointer for s2 beyond the length of s2
-                if(j< s2.length() -1){
-                    j++;
-                }
-            } else if (startIndex != -1){
-                startIndex = -1;
-                j=0;
+            }
+            //if we have traversed all of s1 and s2 pointer has not moved to end of s2, s2 is not in s1
+            if (j != s2.length()) {
+                return -1;
             }
         }
-        //if we have traversed all of s1 and s2 pointer has not moved to end of s2, s2 is not in s1
-        if (j != s2.length()){
-            return -1;
-        }
-        return -2;
+        return -1;
     }
 }
