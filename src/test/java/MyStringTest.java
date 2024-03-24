@@ -50,4 +50,13 @@ public class MyStringTest {
         Assert.assertEquals(-1, i);
     }
 
+    @Test
+    public void tests2Ins1igreaterThanPos(){
+        String s1 = "strcating";
+        String s2 = "cat";
+        int pos = 1;
+        int i = ms.indexOfString(s1,s2,pos);
+        Assert.assertEquals(-2, i);
+    }
+
 }
