@@ -19,6 +19,9 @@ public class MyString {
                 if(j< s2.length() -1){
                     j++;
                 }
+            } else if (startIndex != -1){
+                startIndex = -1;
+                j=0;
             }
         }
         //if we have traversed all of s1 and s2 pointer has not moved to end of s2, s2 is not in s1
