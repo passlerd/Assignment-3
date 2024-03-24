@@ -17,7 +17,7 @@ public class MyString {
                     if (j < s2.length() - 1) {
                         j++;
                     }
-                } else if (startIndex != -1) {
+                } else {
                     startIndex = -1;
                     j = 0;
                 }
