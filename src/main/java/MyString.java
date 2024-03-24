@@ -9,7 +9,7 @@ public class MyString {
         for (int i = 0; i < s1.length(); i++){
             if (s1.charAt(i) == s2.charAt(j)){
                 //if startIndex is -1, it is the beginning of the potential matching substring in s1
-                if(startIndex == -1 && i> pos && j == 0){
+                if(startIndex == -1 && i>= pos && j == 0){
                     startIndex = i;
                 }
                 if(j==s2.length() -1){
