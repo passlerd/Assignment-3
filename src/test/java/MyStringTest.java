@@ -58,5 +58,12 @@ public class MyStringTest {
         int i = ms.indexOfString(s1,s2,pos);
         Assert.assertEquals(3, i);
     }
-
+    @Test
+    public void tests2Ins1ilessThanPos(){
+        String s1 = "strcating";
+        String s2 = "cat";
+        int pos = 4;
+        int i = ms.indexOfString(s1,s2,pos);
+        Assert.assertEquals(-1, i);
+    }
 }
