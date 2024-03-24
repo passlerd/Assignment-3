@@ -90,5 +90,13 @@ public class MyStringTest {
         int i = ms.indexOfString(s1,s2,pos);
         Assert.assertEquals(7, i);
     }
+    @Test
+    public void tests2InS1TwicePosAfterIndexOfFirstS2(){
+        String s1 = "strcatincatting";
+        String s2 = "cat";
+        int pos = 7;
+        int i = ms.indexOfString(s1,s2,pos);
+        Assert.assertEquals(8, i);
+    }
 
 }
