@@ -74,4 +74,12 @@ public class MyStringTest {
         int i = ms.indexOfString(s1,s2,pos);
         Assert.assertEquals(3, i);
     }
+    @Test
+    public void testPartials2InS1BeforeActuals2(){
+        String s1 = "strcaincatting";
+        String s2 = "cat";
+        int pos = 1;
+        int i = ms.indexOfString(s1,s2,pos);
+        Assert.assertEquals(7, i);
+    }
 }
