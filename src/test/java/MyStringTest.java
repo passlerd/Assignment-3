@@ -66,4 +66,12 @@ public class MyStringTest {
         int i = ms.indexOfString(s1,s2,pos);
         Assert.assertEquals(-1, i);
     }
+    @Test
+    public void tests2Ins1iEqualsPos(){
+        String s1 = "strcating";
+        String s2 = "cat";
+        int pos = 3;
+        int i = ms.indexOfString(s1,s2,pos);
+        Assert.assertEquals(3, i);
+    }
 }
