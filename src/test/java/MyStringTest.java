@@ -56,7 +56,7 @@ public class MyStringTest {
         String s2 = "cat";
         int pos = 1;
         int i = ms.indexOfString(s1,s2,pos);
-        Assert.assertEquals(-2, i);
+        Assert.assertEquals(3, i);
     }
 
 }
