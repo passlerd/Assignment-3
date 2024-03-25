@@ -31,7 +31,7 @@ public class MyString {
     }
 
     public String replace(String s, String s1, String s2) {
-        if (s == null || s1==null){
+        if (s == null || s1==null || s2==null){
             return null;
         }
         return "";
