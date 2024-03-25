@@ -108,4 +108,13 @@ public class MyStringTest {
         Assert.assertNull(actual);
     }
 
+    @Test
+    public void replaces1Null(){
+        String s = "string";
+        String s1 = null;
+        String s2 = "cat";
+        String actual = ms.replace(s,s1,s2);
+        Assert.assertNull(actual);
+    }
+
 }
