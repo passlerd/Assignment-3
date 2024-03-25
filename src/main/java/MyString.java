@@ -35,7 +35,17 @@ public class MyString {
             return null;
         } else if (s1.equals("")){
             return s;
+        }else{
+            int indexs1 = indexOfString(s,s1,0);
+            StringBuilder returnString = new StringBuilder();
+            for(int i = 0; i<indexs1; i++ ){
+                returnString.append(s.charAt(i));
+            }
+            returnString.append(s2);
+            for (int i = indexs1 +1; i< s.length(); i++){
+                returnString.append(s.charAt(i));
+            }
+            return returnString.toString();
         }
-        return "";
     }
 }
