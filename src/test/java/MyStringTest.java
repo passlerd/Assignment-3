@@ -152,4 +152,13 @@ public class MyStringTest {
         String actual = ms.replace(s,s1,s2);
         Assert.assertEquals("string", actual);
     }
+
+    @Test
+    public void replacesContainsS1MultipleTimes(){
+        String s = "strtintg";
+        String s1 = "t";
+        String s2 = "cat";
+        String actual = ms.replace(s,s1,s2);
+        Assert.assertEquals("scatrcatincatg", actual);
+    }
 }
