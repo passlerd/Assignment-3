@@ -143,4 +143,13 @@ public class MyStringTest {
         String actual = ms.replace(s,s1,s2);
         Assert.assertEquals("scatring", actual);
     }
+
+    @Test
+    public void replaces1NotInS(){
+        String s = "string";
+        String s1 = "dog";
+        String s2 = "cat";
+        String actual = ms.replace(s,s1,s2);
+        Assert.assertEquals("string", actual);
+    }
 }
