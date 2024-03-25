@@ -10,7 +10,7 @@ public class MyString {
                     if (startIndex == -1 && i >= pos && j == 0) {
                         startIndex = i;
                     }
-                    if (j == s2.length() - 1) {
+                    if (j == s2.length() - 1 && startIndex >= pos) {
                         return startIndex;
                     }
                     //do not increase the pointer for s2 beyond the length of s2
