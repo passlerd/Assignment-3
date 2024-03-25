@@ -125,4 +125,13 @@ public class MyStringTest {
         String actual = ms.replace(s,s1,s2);
         Assert.assertNull(actual);
     }
+
+    @Test
+    public void replaces1Empty(){
+        String s = "string";
+        String s1 = "";
+        String s2 = "cat";
+        String actual = ms.replace(s,s1,s2);
+        Assert.assertEquals("string", actual);
+    }
 }
