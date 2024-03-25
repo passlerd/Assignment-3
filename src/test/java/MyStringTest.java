@@ -99,4 +99,13 @@ public class MyStringTest {
         Assert.assertEquals(8, i);
     }
 
+    @Test
+    public void replacesNull(){
+        String s = null;
+        String s1 = "s";
+        String s2 = "cat";
+        String actual = ms.replace(s,s1,s2);
+        Assert.assertNull(actual);
+    }
+
 }

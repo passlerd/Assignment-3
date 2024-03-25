@@ -29,4 +29,8 @@ public class MyString {
         }
         return -1;
     }
+
+    public String replace(String s, String s1, String s2) {
+        return "";
+    }
 }
