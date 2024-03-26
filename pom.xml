@@ -48,6 +48,7 @@
                         <param>MyStringTest</param>
                     </targetTests>
                     <mutationThreshold>95</mutationThreshold>
+                    <coverageThreshold>95</coverageThreshold>
                 </configuration>
             </plugin>
         </plugins>
